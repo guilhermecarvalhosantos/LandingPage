@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    width: 600px; /* Aumentado para acomodar duas colunas */
+}
+
+.name {
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Duas colunas e um espaço para o separador */
+    gap: 15px; /* Espaço entre os campos */
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.separator {
+    width: 2px; /* Largura do separador */
+    /* Cor do separador */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff4081;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff4081;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff3d71;
+}
+
+#messageBox {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1em;
+}

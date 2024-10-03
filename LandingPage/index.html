@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://apis.google.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page da Tech Security</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="name">Tech Security</h1>
+        <h1>Candidate-se à Vaga</h1>
+        <p>Preencha o formulário abaixo para se inscrever na posição desejada.</p>
+        <form id="applicationForm">
+            <div class="form-grid">
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="linkedin">Perfil do LinkedIn:</label>
+                        <input type="url" id="linkedin" placeholder="https://linkedin.com/in/seu-perfil">
+                    </div>
+                </div>
+                <div class="separator"></div> <!-- Separador entre as colunas -->
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="resume">Currículo (link ou upload):</label>
+                        <input type="url" id="resume" placeholder="URL do currículo ou faça upload">
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Cargo Desejado:</label>
+                        <input type="text" id="position" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Experiência Anterior:</label>
+                        <textarea id="experience" rows="4" placeholder="Descreva sua experiência anterior..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem de Apresentação:</label>
+                        <textarea id="message" rows="4" placeholder="Escreva uma breve mensagem ou motivação..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Enviar Candidatura</button>
+        </form>
+        <div id="messageBox"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
